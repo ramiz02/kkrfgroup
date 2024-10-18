@@ -1,0 +1,169 @@
+/* Reset Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global Styles */
+html, body {
+  height: 100%; /* Ensure full height */
+  margin: 0; /* Remove default margin */
+  padding-top: 20px;
+  background-color: black;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #fff;
+  transition: transform 0.3s ease;
+}
+.body:hover {
+  transform: scale(1.1); /* Adjust scale value to control the zoom level */
+}
+
+/* Container Styles */
+.bg-container {
+  padding: 20px;
+  min-height: 100vh; /* Use min-height for full viewport coverage */
+}
+
+/* Header Styles */
+header {
+  position: fixed;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 5rem;
+  padding-right: 10%;
+}
+
+header h4 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+header nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 16px;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+/* Hero Section */
+.main-heading {
+  font-size: 2.5em;
+  text-align: center;
+  padding-top: 100px; /* Offset for fixed header */
+  line-height: 1.4;
+  font-family: Bree Serif DC;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 60vh;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.video-container video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+  font-size: 2em;
+}
+
+/* Small Videos Section */
+.video-section{
+  display: flex;
+  flex-direction: row;
+}
+
+.video-small-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.small-video {
+  flex: 1;
+  max-width: 45%;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.small-video video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .video-small-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .small-video {
+    max-width: 100%;
+  }
+
+  section h1 {
+    font-size: 1.8em;
+    padding-top: 120px; /* Larger offset for smaller screens */
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  section h1 {
+    font-size: 2.2em;
+  }
+}
+
+@media (min-width: 1025px) {
+  section h1 {
+    font-size: 2.5em;
+  }
+}
+.meets-brand{
+  padding: 20px;
+  text-shadow: 2rem rgb(125, 200, 182);
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+.para{
+  font-size: 25px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.brand{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1cm;
+}
